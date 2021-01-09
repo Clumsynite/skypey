@@ -6,8 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./store";
 
 const render = () => {
-  console.log("%c Rendered with � � � ", "background: purple; color:#fff");
-  console.log(store.getState());
   ReactDOM.render(<App />, document.getElementById("root"));
 };
 
