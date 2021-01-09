@@ -3,6 +3,7 @@ import _ from "lodash";
 
 import Header from "./Header";
 import Chats from "./Chats";
+import MessageInput from "../containers/MessageInput";
 
 import store from "../store";
 import "./ChatWindow.css";
@@ -15,11 +16,13 @@ const ChatWindow = ({ activeUserId }) => {
     activeUserId,
   ]);
   const messages = useMemo(() => _.values(activeMsgs), [activeMsgs]);
+  const { typing } = state;
 
   return (
     <div className="ChatWindow">
       <Header user={activeUser} />
       <Chats messages={messages} />
+      <MessageInput value={typing} />
     </div>
   );
 };
