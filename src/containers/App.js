@@ -1,12 +1,12 @@
 import React from "react";
 import _ from "lodash";
-import "./static-data";
-import store from "./store";
+import "../static-data";
+import store from "../store";
 
-import Sidebar from "./Sidebar";
-import Main from "./Main";
+import Sidebar from "../components/Sidebar";
+import Main from "../components/Main";
 
-import "./styles/App.css";
+import "./App.css";
 
 const App = () => {
   const { contacts } = store.getState();

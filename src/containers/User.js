@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "react-avatar";
 
-import "./styles/User.css";
+import "./User.css";
 
 const User = ({ user }) => {
   const { name, status } = user;

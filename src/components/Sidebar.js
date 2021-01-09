@@ -1,5 +1,5 @@
-import User from "./User";
-import "./styles/Sidebar.css";
+import User from "../containers/User";
+import "./Sidebar.css";
 
 const Sidebar = ({ contacts }) => {
   return (
